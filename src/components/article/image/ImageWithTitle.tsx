@@ -14,8 +14,11 @@ export default function ImageWithTitle(props: Props) {
     <div
       className={'relative hover:drop-shadow-lg cursor-pointer hover:-translate-y-1 duration-300'}
     >
-      <h4 style={{ fontSize: props.fontSize }} className={ImageWithTitleStyles.categoryTitle}>
-        {props.title}
+      <h4
+        style={{ fontSize: props.fontSize, backgroundColor: props.category?.color }}
+        className={ImageWithTitleStyles.categoryTitle}
+      >
+        {props.category?.text}
       </h4>
       <p style={{ fontSize: props.fontSize }} className={ImageWithTitleStyles.imageTitle}>
         {props.title}
