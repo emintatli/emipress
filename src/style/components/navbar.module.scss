@@ -1,0 +1,32 @@
+@import '../colors';
+@font-face {
+  font-family: 'Pacifico-Regular';
+  src: url('../../fonts/Pacifico-Regular.ttf');
+}
+.logoFont {
+  font-family: 'Pacifico-Regular';
+  font-size: 50px;
+  color: $logoYellow;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  transition: all 1s;
+  &:hover {
+    color: $logoGreen;
+  }
+}
+.menuItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+.rightButtons {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.hamburgerMenu {
+  display: none !important;
+}
